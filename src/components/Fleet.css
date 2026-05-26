@@ -1,0 +1,70 @@
+.fleet {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.fleet h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #1e3c72;
+}
+
+.fleet-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.fleet-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #e0e0e0;
+  transition: border-color 0.3s ease;
+}
+
+.fleet-card:hover {
+  border-color: #2a5298;
+}
+
+.fleet-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.fleet-card h3 {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin-bottom: 0.5rem;
+}
+
+.capacity {
+  font-size: 1rem;
+  color: #2a5298;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .fleet h2 {
+    font-size: 1.8rem;
+  }
+
+  .fleet-grid {
+    grid-template-columns: 1fr;
+  }
+}

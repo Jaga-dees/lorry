@@ -1,0 +1,56 @@
+.about {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #1e3c72;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  color: #2a5298;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.highlights {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.highlights li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #2a5298;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.4rem;
+  }
+}
