@@ -10,8 +10,12 @@ function Contact() {
           <div className="contact-info">
             <h3>Contact Information</h3>
             <div className="info-item">
+              <span className="label">👤 Contact Person:</span>
+              <p><strong>K Perumal</strong></p>
+            </div>
+            <div className="info-item">
               <span className="label">📞 Phone:</span>
-              <p>Not publicly displayed - Available on request</p>
+              <p><a href="tel:+919442200326">+91 9442200326</a></p>
             </div>
             <div className="info-item">
               <span className="label">📧 Email:</span>
@@ -35,6 +39,9 @@ function Contact() {
             <p>
               With 30 years of experience and a proven track record, New Indian Cargo Carriers is your reliable 
               partner for all cargo transport needs across India.
+            </p>
+            <p className="call-to-action">
+              <strong>Call K Perumal at 9442200326 for immediate assistance!</strong>
             </p>
           </div>
         </div>
