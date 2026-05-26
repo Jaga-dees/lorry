@@ -17,6 +17,90 @@
   align-items: center;
 }
 
+/* Lorry Animation Styles */
+.lorry-animation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #87ceeb 0%, #e0f6ff 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lorry-road {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to right, 
+    rgba(255, 255, 255, 0.3) 0%, 
+    rgba(255, 255, 255, 0.5) 50%, 
+    rgba(255, 255, 255, 0.3) 100%);
+  border-top: 3px dashed #666;
+  border-bottom: 3px dashed #666;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.lorry {
+  font-size: 4rem;
+  animation: driveLorry 4s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.lorry-cabin {
+  display: inline-block;
+  animation: sway 2s ease-in-out infinite;
+}
+
+@keyframes driveLorry {
+  0% {
+    transform: translateX(-150px) scale(0.7);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(calc(100% - 100px)) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100% + 150px)) scale(0.7);
+    opacity: 0.6;
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animation-text {
+  color: #1e3c72;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  animation: fadeInOut 4s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
 .about-text h3 {
   font-size: 1.8rem;
   color: #2a5298;
@@ -52,5 +136,17 @@
 
   .about-text h3 {
     font-size: 1.4rem;
+  }
+
+  .lorry-animation-container {
+    min-height: 250px;
+  }
+
+  .lorry {
+    font-size: 3rem;
+  }
+
+  .lorry-road {
+    height: 120px;
   }
 }
