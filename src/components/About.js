@@ -7,6 +7,14 @@ function About() {
       <div className="container">
         <h2>About Us</h2>
         <div className="about-content">
+          <div className="lorry-animation-container">
+            <div className="lorry-road">
+              <div className="lorry">
+                <div className="lorry-cabin">🚛</div>
+              </div>
+            </div>
+            <p className="animation-text">30 Years on the Road, Still Delivering Excellence</p>
+          </div>
           <div className="about-text">
             <h3>30 Years of Trust & Excellence</h3>
             <p>
